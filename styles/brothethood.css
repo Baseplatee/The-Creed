@@ -76,23 +76,23 @@ main li:nth-of-type(3) img {
   header nav {
     display: none;
   }
-  main ul {
+  main section ul {
     grid-template-columns: 100%;
   }
-  main li:nth-of-type(1) img {
+  main section li:nth-of-type(1) img {
     height: 30.661rem;
   }
-  main li:nth-of-type(3) {
+  main section li:nth-of-type(3) {
     grid-column: auto;
     height: auto;
   }
-  main li:nth-of-type(3) img {
+  main section li:nth-of-type(3) img {
     height: auto;
   }
-  main li {
+  main section li {
     flex-flow: column wrap;
   }
-  main li img {
+  main section li img {
     width: 100%;
     height: auto;
   }
