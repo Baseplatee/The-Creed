@@ -1,0 +1,117 @@
+#hero {
+  height: 75rem;
+
+  background-image: url("/Images/assassins-creed-3840x2160-12972.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+#hero-content {
+  width: 100%;
+  background-color: rgba(51, 47, 47, 0.8);
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
+  border-radius: 0.8rem;
+  padding: 5rem 0;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  top: 25rem;
+}
+
+#hero-content h1 {
+  text-transform: uppercase;
+  color: aliceblue;
+  font-family: "Ralway", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+#hero-content p {
+  color: aliceblue;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+#hero-content a {
+  text-decoration: none;
+  background-color: rgb(167, 7, 39);
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  box-shadow: 4px 4px 8px;
+  text-transform: capitalize;
+}
+
+#hero-content a:hover {
+  background-color: rgb(190, 27, 60);
+}
+#highlights {
+  padding: 2rem;
+  background: linear-gradient(180deg, rgb(236, 236, 236), rgb(83, 83, 83));
+}
+#highlight {
+  text-align: center;
+  text-transform: uppercase;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: auto;
+  margin-bottom: 10rem;
+  padding: 0;
+}
+#highlights h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  text-shadow: 1px 1px 5px;
+  margin: 3rem auto 2.5rem 1.6rem;
+}
+#highlights p {
+  font-size: 1.4rem;
+}
+.protagonist img {
+  margin: 0 2rem;
+  height: 32rem;
+  width: 22rem;
+  box-shadow: 2px 2px 8px;
+  border-radius: 6px;
+  border: 0.4px solid black;
+  object-fit: cover;
+}
+
+.protagonist strong {
+  color: rgb(196, 13, 13);
+}
+
+@media (max-width: 48rem) {
+  body {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+  }
+  header nav {
+    display: none;
+  }
+  #hero-content {
+    width: 80%;
+    padding: 3rem;
+  }
+  #hero-content h1 {
+    font-size: 2.2rem;
+  }
+  #hero-content p {
+    font-size: 1.2rem;
+  }
+  #hero-content a {
+    font-size: 1.2rem;
+  }
+}
