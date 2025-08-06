@@ -1,3 +1,7 @@
+.hamburger span {
+  background-color: rgb(151, 0, 30);
+}
+
 #hero {
   height: 75rem;
 
