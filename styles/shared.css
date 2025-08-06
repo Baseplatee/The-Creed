@@ -16,6 +16,58 @@ body {
   /* x axis y axis blur redius color */
   text-shadow: 1px 1px 5px rgb(0, 0, 0);
 }
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  display: none;
+  width: 3rem;
+  height: 3.5rem;
+}
+.hamburger span {
+  background-color: white;
+  width: 100%;
+  height: 4px;
+}
+
+#side-drawer {
+  background-color: rgb(48, 48, 48);
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+}
+#side-drawer:target {
+  display: block;
+}
+#side-drawer div {
+  height: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 1.25rem;
+}
+#side-drawer ul {
+  font-size: 1.8rem;
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#side-drawer li {
+  margin: 1.2rem 0;
+  text-align: center;
+}
+#side-drawer a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: rgb(245, 245, 245);
+}
 
 header {
   text-align: center;
@@ -65,6 +117,9 @@ footer {
 }
 
 @media (max-width: 48rem) {
+  .hamburger {
+    display: flex;
+  }
   #page-logo a {
     font-size: 2.5rem;
   }
