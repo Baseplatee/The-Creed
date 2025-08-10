@@ -41,6 +41,7 @@
 }
 
 #hero-content a {
+  display: inline-block;
   text-decoration: none;
   background-color: rgb(167, 7, 39);
   color: black;
@@ -49,11 +50,11 @@
   padding: 1rem 2rem;
   border-radius: 5px;
   box-shadow: 4px 4px 8px;
-  text-transform: capitalize;
+  transition: transform 2s ease-out 0.1s;
 }
-
 #hero-content a:hover {
   background-color: rgb(190, 27, 60);
+  transform: scale(1.16);
 }
 #highlights {
   padding: 2rem;
@@ -80,15 +81,20 @@
 }
 #highlights p {
   font-size: 1.4rem;
+  margin-top: 2.2rem;
 }
 .protagonist img {
   margin: 0 2rem;
   height: 32rem;
   width: 22rem;
-  box-shadow: 2px 2px 8px;
+  box-shadow: 1px 1px 5px;
   border-radius: 6px;
   border: 0.4px solid black;
   object-fit: cover;
+  transition: transform 3s ease-out;
+}
+.protagonist img:hover {
+  transform: scale(1.15);
 }
 
 .protagonist strong {
