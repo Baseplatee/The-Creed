@@ -15,9 +15,50 @@
 
 <body>
     <main>
+        <section>
+            <h1>We Hear You!</h1>
+            <h2> Send your message via this form, and be sure we will see it. </h2>
+        </section>
         <form>
-            
+            <section>
+                <h3>Your information</h3>
+                <label for="username">Full name</label>
+                <input type="text" id="username" name="username">
+                <label for="user-email">Email</label>
+                <input type="email" id="user-email" name="user-email" required placeholder="Example@gmail.com">
+                <label for="user-number">phone number</label>
+                <input type="tel" id="user-num" name="user-num" required>
+            </section>
+            <section>
+                <h3>How would you like us to reply to you?</h3>
+                <ul>
+                    <li class="reply">
+                        <input type="radio" id="rep-email" name="rep-option" value="via-email" required>
+                        <label for="rep-email">Via Email</label>
+                    </li>
+                    <li class="reply">
+                        <input type="radio" id="rep-call" name="rep-option" value="via-call" required>
+                        <label for="rep-call">Via phone call</label>
+                    </li>
+                    <li class="reply">
+                        <input type="radio" id="none" name="rep-option" value="none-rep" required>
+                        <label for="none">Don't reply</label>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <label for="massage">Your Massage</label>
+                <textarea name="user-massage" id="massage" rows="6" required maxlength="250s"></textarea>
+            </section>
+            <section>
+                <div id="buttons">
+                    <button id="r-btn" type="reset">Clear</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </section>
         </form>
+        <a href="/index.htm">back to home </a>
     </main>
 </body>
+
 </html>
