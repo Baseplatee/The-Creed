@@ -37,13 +37,20 @@ label {
   font-size: 1.3rem;
   margin: 0.8rem 0;
 }
-
+#username {
+  width: 90%;
+}
+span {
+  margin-left: 0.4rem;
+  font-size: 1.3rem;
+}
 input,
 textarea {
   resize: vertical;
   width: 100%;
   box-sizing: border-box;
   padding: 0.3rem;
+  border-radius: 6px;
 }
 ul {
   list-style: none;
