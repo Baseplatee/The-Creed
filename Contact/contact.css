@@ -60,6 +60,7 @@ span.warning {
 span {
   margin-left: 0.4rem;
   font-size: 1.3rem;
+  font-weight: 600;
 }
 
 input,
